@@ -1,0 +1,44 @@
+.banner {
+    height: 80vh;
+    align-items: center;
+    justify-content: left;
+
+    h1 {
+        background-image: linear-gradient(to left, rgb(167, 38, 184)10% , rgb(38, 19, 150) 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: white;
+        border-right: 3px solid rgba(255, 255, 255, 0.75);
+        font-size: 2.5em;
+        animation: blinkCursor 2s steps(40) infinite normal,
+            typing 2.5s steps(40) 1s normal both;
+        overflow: hidden;
+        white-space: nowrap;
+      
+    }
+}
+
+
+
+/*---------animação da tag h1 - Layse Gabrielly -----------*/
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 9.1em;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}

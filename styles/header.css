@@ -1,0 +1,94 @@
+header {
+    padding: 1.5em 0;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .9em;
+
+
+    img {
+        width: 30px;
+        transition: transform 1s ease-in-out;
+
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
+
+    nav {
+        position: relative;
+        align-items: center;
+        width: 60%;
+        justify-content: space-between;
+        transition: 0.5s;
+
+        a {
+            padding-bottom: 2px;
+            font-weight: 400;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                border-radius: 5px;
+                bottom: 0;
+                left: 0;
+                background-color: var(--lg-cor-destaque);
+                visibility: hidden;
+                -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+                -webkit-transition: all 0.3s ease-in-out 0s;
+                transition: all 0.3s ease-in-out 0s;
+            }
+
+            &:hover {
+                color: rgb(255, 255, 255);
+                transform: translateY(3px);
+            }
+
+            &:hover:before {
+                visibility: visible;
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+            }
+        }
+    }
+
+    .contate-me {
+        padding: .5em 1.5em;
+        border-radius: 10px;
+        background-color: rgba(128, 128, 128, 0.11);
+        transition: 1s;
+        box-shadow: 0 0 20px #00000086;
+        text-align: center;
+        background-size: 200% auto;
+        background-image: linear-gradient(to right, #af098be5 0%, #5dddee 51%, #5a1eb9 100%);
+
+        &:hover {
+            background-position: right center;
+            transform: translateY(5px);
+            box-shadow: none;
+
+        }
+    }
+
+}
+
+@media (max-width:500px) {
+    header {
+        flex-direction: column;
+
+        nav {
+            width: 100%;
+            padding: .5em 0;
+
+            a {
+                &:first-child {
+                    display: none;
+                }
+            }
+        }
+
+        
+    }
+}

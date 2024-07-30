@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('styles/header.css');
+@import url('styles/banner.css');
+@import url('styles/projetos.css');
+
+@import url('styles/components/background-gradient.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lg-cor-destaque: rgb(144, 25, 160);
+    --lg-background-color: #040414;
+    --lg-text-color: rgb(255, 255, 255);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    padding: 0 10%;
+    max-width: 1320px;
+    font-family: "Roboto Mono", monospace;
+    background-color: var(--lg-background-color);
+    color: var(--lg-text-color);
+
+    /* Scrollbar personalizada */
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: var(--lg-background-color);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--lg-cor-destaque);
+        border-radius: 5px;
+    }
+
+
+    a {
+        text-decoration: none;
+        color: var(--lg-text-color);
+    }
+
+}
+
+
+@media (max-width:500px) {
+   body {
+    padding: 0 2em;
+   }
+}
+
+/*Utilitys*/
+.display-flex {
+    display: flex;
+}
+
+.flex-collumn {
+    flex-direction: column;
+}
