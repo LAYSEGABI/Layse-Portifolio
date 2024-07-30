@@ -1,7 +1,7 @@
 .gradient {
     z-index: -10;
     position: absolute;
-    --speed: 5s;
+    --speed: 3s;
     --easing: cubic-bezier(0.9, 0.9, 0.9, 0.8);
     width: var(--size);
     height: var(--size);

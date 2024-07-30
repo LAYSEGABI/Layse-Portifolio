@@ -1,26 +1,133 @@
 .banner {
+    display: flex;
+    flex-direction: column;
     height: 80vh;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
+    text-align: center;
 
-    h1 {
-        background-image: linear-gradient(to left, rgb(167, 38, 184)10% , rgb(38, 19, 150) 80%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: white;
-        border-right: 3px solid rgba(255, 255, 255, 0.75);
-        font-size: 2.5em;
-        animation: blinkCursor 2s steps(40) infinite normal,
-            typing 2.5s steps(40) 1s normal both;
-        overflow: hidden;
-        white-space: nowrap;
-      
+    .icon {
+        width: 200px;
+        border-radius: 100%;
+        mix-blend-mode: difference;
+        /* Modo de mesclagem de fundo */
     }
+
+    .banner-descricao {
+        width: 60%;
+
+        p {
+            span {
+                color: var(--lg-cor-destaque);
+                font-weight: 600;
+            }
+        }
+
+        h1 {
+            background-image: linear-gradient(to left, rgb(167, 38, 184)10%, rgb(38, 19, 150) 80%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: white;
+            border-right: 3px solid rgba(255, 255, 255, 0.75);
+            font-size: 2.5em;
+            animation: blinkCursor 2s steps(40) infinite normal,
+                typing 2.5s steps(40) 1s normal both;
+            overflow: hidden;
+            white-space: nowrap;
+
+        }
+    }
+
+    .habilidades {
+
+        padding: 1.6em 0;
+
+        ul {
+            display: flex;
+
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                list-style: none;
+                margin: 0 15px;
+                position: relative;
+                padding: .2em 1em;
+                text-align: center;
+                line-height: 63px;
+                background: rgba(255, 255, 255, 0.03);
+                border-radius: 40px;
+                font-size: 30px;
+                color: #666;
+                transition: .5s;
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.03);
+
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 40px;
+                    background: rgba(247, 0, 255, 0);
+                    transition: .5s;
+                    transform: scale(.9);
+                    z-index: -1;
+                }
+
+                &:hover::before {
+                    transform: scale(1.1);
+                    box-shadow: 0 0 5px var(--lg-cor-destaque);
+                }
+
+                &:hover {
+                    color: var(--lg-cor-destaque);
+                    box-shadow: 0 0 15px var(--lg-cor-destaque);
+                    text-shadow: 0 0 5px var(--lg-cor-destaque);
+                }
+
+                i {
+                    width: 30px;
+                }
+
+            }
+        }
+
+    }
+
+
 }
 
+@media (max-width: 900px) {
+    .banner {
+        .banner-descricao {
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            width: 100%;
+            align-items: center;
 
+            h1 {
+                font-size: 2em;
+            }
+        }
+    }
 
+}
+
+@media (max-width: 500px) {
+    .habilidades {
+        ul {
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+}
 /*---------animação da tag h1 - Layse Gabrielly -----------*/
 
 @keyframes typing {
@@ -29,7 +136,7 @@
     }
 
     to {
-        width: 9.1em;
+        width: 15em;
     }
 }
 
