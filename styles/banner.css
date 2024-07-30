@@ -122,6 +122,15 @@
 }
 
 @media (max-width: 500px) {
+
+    .banner {
+        .banner-descricao {
+          
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    }
     .habilidades {
         ul {
             flex-wrap: wrap;
