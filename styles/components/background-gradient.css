@@ -46,6 +46,32 @@
 
 }
 
+@media (max-width:900px) {
+   .obj1 {
+    top: -10%;
+    left: auto;
+    right: -40%;
+   }
+}
+
+@media (max-width:500px) {
+    .obj1 {
+        --size:300px;
+     top: 0;
+     left: auto;
+     right: -30%;
+    }
+ }
+ 
+ @media (max-width:400px) {
+    .obj1 {
+        --size:300px;
+     top: 0;
+     left: auto;
+     right: -20%;
+    }
+ }
+ 
 
 
 
