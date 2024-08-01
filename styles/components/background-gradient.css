@@ -46,6 +46,15 @@
 
 }
 
+.obj5 {
+    --size: 300px;
+    top: 180%;
+    left: -10%;
+    filter: blur(calc(var(--size) / 4));
+    background-image: linear-gradient(hsla(298, 77%, 46%, 0.5), hsla(212, 81%, 50%, 0.432));
+
+}
+
 @media (max-width:900px) {
    .obj1 {
     top: -10%;
@@ -75,9 +84,7 @@
 
 
 
-* {
-    transition: all 0.5s ease;
-}
+
 
 @keyframes rotate {
     0% {

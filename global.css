@@ -3,6 +3,7 @@
 @import url('styles/header.css');
 @import url('styles/banner.css');
 @import url('styles/projetos.css');
+@import url('styles/sobre-mim.css');
 
 @import url('styles/components/background-gradient.css');
 
@@ -50,6 +51,22 @@ body {
         text-decoration: none;
         color: var(--lg-text-color);
     }
+
+   footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100% ;
+        padding: 1em;
+        width: 70%;
+
+    }
+   }
 
 }
 
