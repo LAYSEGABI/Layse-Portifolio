@@ -103,3 +103,18 @@ header {
 
     }
 }
+
+
+@media (max-width:380px) {
+    header {
+       
+        nav {
+            width: 65%;
+        
+
+        }
+
+    
+
+    }
+}

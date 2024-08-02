@@ -56,6 +56,10 @@
 
 }
 
+.mobile {
+    display: none;
+}
+
 @media (max-width:900px) {
     .obj1 {
         top: -10%;
@@ -65,6 +69,11 @@
 }
 
 @media (max-width:500px) {
+    .mobile {
+        display: block;
+        width: 100vw;
+        overflow: hidden;
+    }
     .obj1 {
         display: none;
     }
