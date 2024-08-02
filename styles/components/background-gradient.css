@@ -67,27 +67,33 @@
 
 @media (max-width:500px) {
     .obj1 {
-        --size: 250px;
+        --size: 200px;
         top: 380%;
         left: 10%;
     }
 
     .obj2 {
+        --size: 300px;
+
         top: 90%;
         left: -30%;
     }
 
     .obj3 {
+        --size:200px;
         top: -20%;
         left: 10%;
     }
 
     .obj4 {
-        left: -10%;
+        --size: 150px;
+
+        left: 30%;
         top: 160%;
     }
 
     .obj5 {
+        --size: 200px;
         top: 260%;
     }
 
