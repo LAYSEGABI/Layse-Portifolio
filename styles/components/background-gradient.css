@@ -5,9 +5,9 @@
     --easing: cubic-bezier(0.9, 0.9, 0.9, 0.8);
     width: var(--size);
     height: var(--size);
-    
-   
-    animation: rotate var(--speed) var(--easing)  infinite;
+
+
+    animation: rotate var(--speed) var(--easing) infinite;
     border-radius: 100%;
 }
 
@@ -28,6 +28,7 @@
     background-image: linear-gradient(hsla(298, 77%, 46%, 0.384), hsla(212, 81%, 50%, 0.267));
 
 }
+
 .obj3 {
     --size: 300px;
     top: -150px;
@@ -56,34 +57,38 @@
 }
 
 @media (max-width:900px) {
-   .obj1 {
-    top: -10%;
-    left: auto;
-    right: -40%;
-   }
+    .obj1 {
+        top: -10%;
+        left: auto;
+        right: -40%;
+    }
 }
 
 @media (max-width:500px) {
     .obj1 {
-        --size:300px;
-     top: 0;
-     left: auto;
-     right: -30%;
+        display: none;
     }
- }
- 
- @media (max-width:400px) {
-    .obj1 {
-        --size:300px;
-     top: 0;
-     left: auto;
-     right: -20%;
+
+    .obj2 {
+        top: 90%;
+        left: -30%;
     }
- }
- 
+
+    .obj3 {
+        top: -20%;
+        left: 40%;
+    }
+
+    .obj4 {
+        top: 160%;
+    }
+
+    .obj5 {
+        top: 260%;
+    }
 
 
-
+}
 
 
 @keyframes rotate {
