@@ -16,7 +16,7 @@
     top: -10%;
     right: -40px;
     background-image: linear-gradient(hsla(221, 52%, 29%, 0.699), hsla(300, 84%, 43%, 0.596));
-    filter: blur(calc(var(--size) / 7));
+    filter: blur(calc(var(--size) / 10));
 
 }
 
