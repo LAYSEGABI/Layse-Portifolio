@@ -15,8 +15,8 @@
     --size: 450px;
     top: -10%;
     right: -40px;
-    background-image: linear-gradient(hsla(221, 52%, 29%, 0.699), hsla(300, 84%, 43%, 0.596));
-    filter: blur(calc(var(--size) / 10));
+    background-image: linear-gradient(hsla(221, 90%, 50%, 0.699), hsla(300, 100%, 50%, 0.705));
+    filter: blur(calc(var(--size) / 3));
 
 }
 
@@ -56,9 +56,6 @@
 
 }
 
-.mobile {
-    display: none;
-}
 
 @media (max-width:900px) {
     .obj1 {
@@ -69,15 +66,10 @@
 }
 
 @media (max-width:500px) {
-    .mobile {
-        z-index: -999;
-        display: block;
-        width: 100vw;
-        overflow: hidden;
-        overflow-x: hidden;
-    }
     .obj1 {
-        display: none;
+        --size: 250px;
+        top: 380%;
+        left: 10%;
     }
 
     .obj2 {
@@ -87,10 +79,11 @@
 
     .obj3 {
         top: -20%;
-        left: 40%;
+        left: 10%;
     }
 
     .obj4 {
+        left: 10%;
         top: 160%;
     }
 
