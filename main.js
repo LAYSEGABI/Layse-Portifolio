@@ -1,42 +1,127 @@
-// Exemplo de dados de receitas
-const receitas = [
+
+const projetos = [
     {
-        imagem: "https://example.com/imagem1.jpg",
-        alternativo: "Imagem da Receita 1",
-        titulo: "Receita 1",
-        texto: "Descrição breve da Receita 1."
+      titulo: "Site Prototipando a quebrada",
+      imagem: "assets/img/capas-projetos/prototipando.png",
+      tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
+      descricao: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa earum quidem tenetur sit. Minima quis.",
+      repositorio: "",
+      site: ""
     },
     {
-        imagem: "https://example.com/imagem2.jpg",
-        alternativo: "Imagem da Receita 2",
-        titulo: "Receita 2",
-        texto: "Descrição breve da Receita 2."
+      titulo: "Travelgram",
+      imagem: "assets/img/capas-projetos/Travelgram.png",
+      tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
+      descricao: "Rede social onde as pessoas mostram os registros de suas viagens pelo mundo. Realizado durante curso na Rocketseat.",
+      repositorio: "",
+      site: ""
     },
     {
-        imagem: "https://example.com/imagem3.jpg",
-        alternativo: "Imagem da Receita 3",
-        titulo: "Receita 3",
-        texto: "Descrição breve da Receita 3."
+      titulo: "Super Mario Bros",
+      imagem: "assets/img/capas-projetos/super-mario.png",
+      tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
+      descricao: "Super Mario Bros é uma vibrante landing page dedicada ao icônico filme inspirado na clássica franquia de jogos da Nintendo.",
+      repositorio: "",
+      site: "https://the-super-mario-bros-movie.vercel.app/"
+    },
+    {
+      titulo: "Site lista de Filmes",
+      imagem: "assets/img/capas-projetos/filmes.png",
+      tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
+      descricao: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa earum quidem tenetur sit. Minima quis.",
+      repositorio: "",
+      site: "https://site-paq-2-0.vercel.app/index.html"
+    },
+    {
+      titulo: "Imover transportadora",
+      imagem: "assets/img/capas-projetos/imover.png",
+      tecnologias: ["fab fa-html5", "fab fa-css3-alt", "fab fa-js-square"],
+      descricao: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa earum quidem tenetur sit. Minima quis.",
+      repositorio: "",
+      site: ""
+    },
+    {
+      titulo: "Portifólio Layse gabrielly",
+      imagem: "assets/img/capas-projetos/portifolio.png",
+      tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
+      descricao: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa earum quidem tenetur sit. Minima quis.",
+      repositorio: "",
+      site: ""
     }
-];
-
-const cardReceita = document.querySelector('#lista-receitas');
-
-// Verifica se o elemento foi encontrado antes de manipular o DOM
-if (cardReceita) {
-    // Usando um método mais eficiente para concatenar HTML
-    const cardHTML = receitas.map(receita => `
-        <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-sm-4">
-            <img class="card-img-top imagem-card" src="${receita.imagem}" alt="${receita.alternativo}">
-            <div class="card-body">
-                <h4 class="card-title">${receita.titulo}</h4>
-                <p class="card-text">${receita.texto}</p>
-                <a href="#" class="btn botao-cor-especial">Veja a receita</a>
-            </div>
-        </article>
-    `).join('');
-
-    cardReceita.innerHTML = cardHTML;
-} else {
-    console.error('Elemento #lista-receitas não encontrado no DOM.');
-}
+  ];
+  
+// Certifique-se de que o script é executado após o carregamento do DOM
+document.addEventListener("DOMContentLoaded", function () {
+    // Verifica se o array de projetos está disponível
+    if (typeof projetos !== "undefined" && Array.isArray(projetos)) {
+      // Seleciona o container onde os projetos serão adicionados
+      const projetosContainer = document.querySelector(".projetos-container");
+  
+      // Função para criar os cards de projetos
+      function criarCardProjeto(projeto) {
+        // Cria o elemento div para o card do projeto
+        const projetoItem = document.createElement("div");
+        projetoItem.classList.add("projetos-item");
+  
+        // Adiciona a imagem do projeto
+        const imagem = document.createElement("img");
+        imagem.classList.add("projeto-capa");
+        imagem.src = projeto.imagem;
+        imagem.alt = projeto.titulo;
+        projetoItem.appendChild(imagem);
+  
+        // Adiciona o título do projeto
+        const titulo = document.createElement("h3");
+        titulo.textContent = projeto.titulo;
+        projetoItem.appendChild(titulo);
+  
+        // Cria o container para as tecnologias usadas
+        const techUsadas = document.createElement("div");
+        techUsadas.classList.add("tech-usadas");
+  
+        // Adiciona os ícones das tecnologias
+        projeto.tecnologias.forEach((tech) => {
+          const li = document.createElement("li");
+          const icon = document.createElement("i");
+          icon.className = tech;
+          li.appendChild(icon);
+          techUsadas.appendChild(li);
+        });
+  
+        projetoItem.appendChild(techUsadas);
+  
+        // Adiciona a descrição do projeto
+        const descricao = document.createElement("p");
+        descricao.textContent = projeto.descricao;
+        projetoItem.appendChild(descricao);
+  
+        // Cria o container para os botões do projeto
+        const bntsProjetoItem = document.createElement("div");
+        bntsProjetoItem.classList.add("bnts-projeto-item");
+  
+        // Adiciona o botão do repositório
+        const linkRepositorio = document.createElement("a");
+        linkRepositorio.href = projeto.repositorio;
+        linkRepositorio.textContent = "Repositório";
+        bntsProjetoItem.appendChild(linkRepositorio);
+  
+        // Adiciona o botão do site
+        const linkSite = document.createElement("a");
+        linkSite.href = projeto.site;
+        linkSite.textContent = "Ver site";
+        linkSite.target = "_blank";
+        bntsProjetoItem.appendChild(linkSite);
+  
+        projetoItem.appendChild(bntsProjetoItem);
+  
+        // Adiciona o card do projeto ao container
+        projetosContainer.appendChild(projetoItem);
+      }
+  
+      // Itera sobre o array de projetos e cria os cards
+      projetos.forEach(criarCardProjeto);
+    } else {
+      console.error("Os dados dos projetos não foram carregados corretamente.");
+    }
+  });
+  
