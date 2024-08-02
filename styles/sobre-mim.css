@@ -94,3 +94,44 @@
 
     }
 }
+
+@media (max-width: 500px) {
+    .sobre-mim {
+        .sobre-container {
+            flex-direction: column;
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+
+            .sobre-descricao {
+                width: 100%;
+
+                .bnts-sobre {
+                    ul {
+                        margin-top: 10px;
+                        flex-direction: column;
+                        gap: 10px;
+                      
+
+                        li {
+                            width: 100%;
+                            justify-content: center;
+
+                            a {
+                                width: 100%;
+                                text-align: center;
+                                justify-content: center;
+                                align-items: center;
+
+                            }
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
