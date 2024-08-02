@@ -21,7 +21,7 @@ const projetos = [
       imagem: "assets/img/capas-projetos/super-mario.png",
       tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
       descricao: "Super Mario Bros é uma vibrante landing page dedicada ao icônico filme inspirado na clássica franquia de jogos da Nintendo.",
-      repositorio: "",
+      repositorio: "https://github.com/LAYSEGABI/The-Super-Mario-Bros-movie",
       site: "https://the-super-mario-bros-movie.vercel.app/"
     },
     {
@@ -62,7 +62,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // Cria o elemento div para o card do projeto
         const projetoItem = document.createElement("div");
         projetoItem.classList.add("projetos-item");
-  
+        projetoItem.setAttribute('role', 'group');
+        projetoItem.setAttribute('aria-labelledby', 'card-title-0');
+        projetoItem.setAttribute('aria-describedby', 'card-desc-0');
+        
+
         // Adiciona a imagem do projeto
         const imagem = document.createElement("img");
         imagem.classList.add("projeto-capa");
@@ -73,6 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Adiciona o título do projeto
         const titulo = document.createElement("h3");
         titulo.textContent = projeto.titulo;
+        titulo.id = 'card-title-0';
         projetoItem.appendChild(titulo);
   
         // Cria o container para as tecnologias usadas
@@ -93,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Adiciona a descrição do projeto
         const descricao = document.createElement("p");
         descricao.textContent = projeto.descricao;
+        descricao.id = 'card-desc-0'
         projetoItem.appendChild(descricao);
   
         // Cria o container para os botões do projeto
@@ -103,12 +109,14 @@ document.addEventListener("DOMContentLoaded", function () {
         const linkRepositorio = document.createElement("a");
         linkRepositorio.href = projeto.repositorio;
         linkRepositorio.textContent = "Repositório";
+        linkRepositorio.setAttribute('aria-label', `visitar o repositório do ${projeto.titulo}`)
         bntsProjetoItem.appendChild(linkRepositorio);
   
         // Adiciona o botão do site
         const linkSite = document.createElement("a");
         linkSite.href = projeto.site;
         linkSite.textContent = "Ver site";
+        linkSite.setAttribute('aria-label', `visitar o ${projeto.titulo}`)
         linkSite.target = "_blank";
         bntsProjetoItem.appendChild(linkSite);
   

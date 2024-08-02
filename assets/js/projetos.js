@@ -21,7 +21,7 @@ const projetos = [
       imagem: "../img/capas-projetos/super-mario.png",
       tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
       descricao: "Super Mario Bros é uma vibrante landing page dedicada ao icônico filme inspirado na clássica franquia de jogos da Nintendo.",
-      repositorio: "",
+      repositorio: "https://github.com/LAYSEGABI/The-Super-Mario-Bros-movie",
       site: "https://the-super-mario-bros-movie.vercel.app/"
     },
     {
