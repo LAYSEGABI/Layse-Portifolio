@@ -53,6 +53,10 @@ body {
         color: var(--lg-text-color);
     }
 
+    section {
+        overflow: hidden;
+    }
+
    footer {
     display: flex;
     align-items: center;
