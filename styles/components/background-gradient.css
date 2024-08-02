@@ -12,7 +12,7 @@
 }
 
 .obj1 {
-    --size: 450px;
+    --size: 300px;
     top: -10%;
     right: -40px;
     background-image: linear-gradient(hsla(221, 90%, 50%, 0.699), hsla(300, 100%, 50%, 0.705));

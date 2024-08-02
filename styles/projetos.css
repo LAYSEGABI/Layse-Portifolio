@@ -120,7 +120,7 @@
                     }
                 }
 
-                a:last-child {
+                a:first-child {
                     background-color: rgba(151, 28, 151, 0.185);
 
                     &:hover {

@@ -1,20 +1,19 @@
-
 const projetos = [
   {
-    titulo: "Site Prototipando a quebrada",
+    titulo: "Site PAQ design novo",
     imagem: "assets/img/capas-projetos/prototipando.png",
-    tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
-    descricao: "descricao prototipando",
-    repositorio: "",
-    site: ""
+    tecnologias: ["fab fa-html5", "fab fa-css3-alt", "fab fa-js-square"],
+    descricao: "Prototipando a Quebrada é uma ONG, me inspirei no próprio site da organização para fazer uma nova versão dele.",
+    repositorio: "https://github.com/LAYSEGABI/Site-PAQ-2.0",
+    site: "https://site-paq-2-0.vercel.app/index.html"
   },
   {
-    titulo: "Travelgram",
-    imagem: "assets/img/capas-projetos/Travelgram.png",
-    tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
-    descricao: "Rede social onde as pessoas mostram os registros de suas viagens pelo mundo. Realizado durante curso na Rocketseat.",
-    repositorio: "https://github.com/LAYSEGABI/Travelagem",
-    site: "https://travelagem.vercel.app/"
+    titulo: "Portifólio Layse gabrielly",
+    imagem: "assets/img/capas-projetos/portifolio.png",
+    tecnologias: ["fab fa-html5", "fab fa-css3-alt",  "fab fa-js-square"],
+    descricao: "Projetado para destacar as habilidades e projetos mais relevantes, dando uma visão geral rápida e impactante do dev.",
+    repositorio: "https://github.com/LAYSEGABI/Portifolio-Layse-Gabrielly-azul",
+    site: "https://portifolio-layse-gabrielly-azul.vercel.app/"
   },
   {
     titulo: "Super Mario Bros",
@@ -25,40 +24,38 @@ const projetos = [
     site: "https://the-super-mario-bros-movie.vercel.app/"
   },
   {
-    titulo: "Site lista de Filmes",
-    imagem: "assets/img/capas-projetos/filmes.png",
-    tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
-    descricao: "descricao lista de filmes",
-    repositorio: "",
-    site: "https://site-paq-2-0.vercel.app/index.html"
-  },
-  {
     titulo: "Imover transportadora",
     imagem: "assets/img/capas-projetos/imover.png",
     tecnologias: ["fab fa-html5", "fab fa-css3-alt", "fab fa-js-square"],
-    descricao: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa earum quidem tenetur sit. Minima quis.",
-    repositorio: "",
-    site: ""
+    descricao: "Landing page de uma empresa de transporte, a ideia de empresa foi desenvolvida em uma startup que eu fiz parte.",
+    repositorio: "https://github.com/LAYSEGABI/iMoveer",
+    site: "https://imoveer.vercel.app/"
   },
   {
-    titulo: "Portifólio Layse gabrielly",
-    imagem: "assets/img/capas-projetos/portifolio.png",
+    titulo: "Site lista de Animes",
+    imagem: "assets/img/capas-projetos/lista-animes.png",
     tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
-    descricao: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa earum quidem tenetur sit. Minima quis.",
-    repositorio: "",
-    site: ""
+    descricao: "Durante um curso da Alura, desenvolvi um site de livros que me deu a inspiração para esse site. Em vez de livros, resolvi colocar meus animes favoritos.",
+    repositorio: "https://github.com/LAYSEGABI/Site-filmes-2.0",
+    site: "https://site-filmes-2-0.vercel.app/"
+  },
+  {
+    titulo: "Travelgram",
+    imagem: "assets/img/capas-projetos/Travelgram.png",
+    tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
+    descricao: "Rede social onde as pessoas mostram os registros de suas viagens pelo mundo. Realizado durante curso na Rocketseat.",
+    repositorio: "https://github.com/LAYSEGABI/Travelagem",
+    site: "https://travelagem.vercel.app/"
   }
 ];
 
-// Certifique-se de que o script é executado após o carregamento do DOM
 document.addEventListener("DOMContentLoaded", function () {
-  // Verifica se o array de projetos está disponível
+
   if (typeof projetos !== "undefined" && Array.isArray(projetos)) {
-    // Seleciona o container onde os projetos serão adicionados
     const projetosContainer = document.querySelector(".projetos-container");
 
-    // Função para criar os cards de projetos
     function criarCardProjeto(projeto) {
+
       // Cria o elemento div para o card do projeto
       const projetoItem = document.createElement("div");
       projetoItem.classList.add("projetos-item");
@@ -80,11 +77,11 @@ document.addEventListener("DOMContentLoaded", function () {
       titulo.id = `card-title-${projeto.titulo}`;
       projetoItem.appendChild(titulo);
 
-      // Cria o container para as tecnologias usadas
+      // cria o container para as tech usadas
       const techUsadas = document.createElement("div");
       techUsadas.classList.add("tech-usadas");
 
-      // Adiciona os ícones das tecnologias
+      // adiciona os ícones das tech
       projeto.tecnologias.forEach((tech) => {
         const li = document.createElement("li");
         const icon = document.createElement("i");
@@ -95,17 +92,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
       projetoItem.appendChild(techUsadas);
 
-      // Adiciona a descrição do projeto
+      // adiciona a descrição do projeto
       const descricao = document.createElement("p");
       descricao.textContent = projeto.descricao;
       descricao.id = `card-desc-${projeto.titulo}`;
       projetoItem.appendChild(descricao);
 
-      // Cria o container para os botões do projeto
+      // cria o container para os botões do projeto
       const bntsProjetoItem = document.createElement("div");
       bntsProjetoItem.classList.add("bnts-projeto-item");
 
-      // Adiciona o botão do site
+      // adiciona o botão pra visitar o site
       const linkSite = document.createElement("a");
       linkSite.href = projeto.site;
       linkSite.textContent = "Ver site";
@@ -114,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
       bntsProjetoItem.appendChild(linkSite);
 
 
-      // Adiciona o botão do repositório
+      // adiciona o botão do repositório
       const linkRepositorio = document.createElement("a");
       linkRepositorio.href = projeto.repositorio;
       linkRepositorio.textContent = "Repositório";
