@@ -84,6 +84,13 @@ body {
    }
 }
 
+@media (max-width:500px) {
+    body {
+     width: 100vw;
+     overflow-x: hidden;
+     padding: 0 1em;
+    }
+ }
 /*Utilitys*/
 .display-flex {
     display: flex;
