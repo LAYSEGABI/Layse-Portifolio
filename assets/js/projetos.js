@@ -1,20 +1,20 @@
 
 const projetos = [
   {
-    titulo: "Site lista de Filmes",
-    imagem: "../img/capas-projetos/filmes.png",
-    tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
-    descricao: "Site em desenvolvimento, projeto iniciado durante mentoria, usei a API de filmes TMDB. Responsivo ",
-    repositorio: "https://github.com/LAYSEGABI/Site-filmes-2.0",
-    site: "https://site-filmes-2-0.vercel.app/"
-  },
-  {
     titulo: "Site PAQ antigo",
     imagem: "../img/capas-projetos/paq-antigo.png",
-    tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
+    tecnologias: ["fab fa-html5", "fab fa-css3-alt", "fab fa-js-square"],
     descricao: "Esse foi o primeiro site do PAQ que eu desenvolvi, são basicamente as mesmas seções só mudei o design.",
     repositorio: "https://github.com/LAYSEGABI/Site-PAQ",
     site: "https://site-paq.vercel.app/"
+  },
+  {
+    titulo: "Site Eventos Culturama",
+    imagem: "../img/capas-projetos/culturama.png",
+    tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
+    descricao: "Uma página de eventos na sua região, Projeto realizado durante o curso da Alura de Grid e Flexbox",
+    repositorio: "https://github.com/LAYSEGABI/Culturama",
+    site: "https://culturama-laysegabi.vercel.app/"
   },
   {
     titulo: "Cafeteria Serenatto",
@@ -33,21 +33,69 @@ const projetos = [
     site: "https://portifolio-dev-azure.vercel.app/"
   },
   {
-    titulo: "Imover transportadora",
-    imagem: "../img/capas-projetos/imover.png",
+    titulo: "E-commerce Meteora",
+    imagem: "../img/capas-projetos/meteora.png",
+    tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
+    descricao: "Fiz esse e-commerce por meio de um curso da plataforma alura tendo como foco a aprendizagem com Bookstrap",
+    repositorio: "https://github.com/LAYSEGABI/E-commerce-Meteora",
+    site: "https://e-commerce-meteora.vercel.app/"
+  },
+  {
+    titulo: "Site lista de Filmes",
+    imagem: "../img/capas-projetos/filmes.png",
     tecnologias: ["fab fa-html5", "fab fa-css3-alt", "fab fa-js-square"],
-    descricao: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa earum quidem tenetur sit. Minima quis.",
+    descricao: "Site em desenvolvimento, projeto iniciado durante mentoria, usei a API de filmes TMDB. Responsivo ",
+    repositorio: "https://github.com/LAYSEGABI/Site-filmes-2.0",
+    site: "https://site-filmes-2-0.vercel.app/"
+  },
+  {
+    titulo: "Alura Books",
+    imagem: "../img/capas-projetos/alura-books.png",
+    tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
+    descricao: "Site desenvolvido durante curso de html e css na alura, esse foi o site base para o de lista de animes.",
     repositorio: "https://github.com/LAYSEGABI/iMoveer",
     site: "https://imoveer.vercel.app/"
   },
   {
-    titulo: "Portifólio Layse gabrielly",
-    imagem: "../img/capas-projetos/portifolio.png",
+    titulo: "Fretex Transportadora",
+    imagem: "../img/capas-projetos/alura-books.png",
     tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
-    descricao: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa earum quidem tenetur sit. Minima quis.",
+    descricao: "Essa foi a primeira vesão do site da imoveer, quando o nome da startup ainda era Fretex",
+    repositorio: "https://github.com/LAYSEGABI/Fretex",
+    site: "https://fretex-tau.vercel.app/"
+  },
+  {
+    titulo: "Página Receita Cupcakes",
+    imagem: "../img/capas-projetos/receita-cupcake.png",
+    tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
+    descricao: "Uma página simples sobre uma receita de cupcake, desenvolvido durante curso da Rocketseat.",
     repositorio: "https://github.com/LAYSEGABI/Portifolio-Layse-Gabrielly-azul",
     site: "https://portifolio-layse-gabrielly-azul.vercel.app/"
+  },
+  {
+    titulo: "Página Roteiro turísticos",
+    imagem: "../img/capas-projetos/busan.png",
+    tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
+    descricao: "Página com as principais informações para quem quer viajar para Busan, desenvolvido durante curso na Rocketseat",
+    repositorio: "https://github.com/LAYSEGABI/Portifolio-Layse-Gabrielly-azul",
+    site: "https://portifolio-layse-gabrielly-azul.vercel.app/"
+  },
+  {
+    titulo: "Meu primeiro Portifólio",
+    imagem: "../img/capas-projetos/primeiro-portifolio.png",
+    tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
+    descricao: "Meu primeiro portifólio, não cheguei a terminar, ele foi desenvolvido durante um curso na alura.",
+    repositorio: "https://github.com/LAYSEGABI/Meu-portifolio",
+    site: "https://local-turistico-psi.vercel.app/"
   }, 
+  {
+    titulo: "Site Co.part",
+    imagem: "../img/capas-projetos/co-part.png",
+    tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
+    descricao: "Meu primeiro portifólio, não cheguei a terminar, ele foi desenvolvido durante um curso na alura.",
+    repositorio: "https://github.com/LAYSEGABI/Meu-portifolio",
+    site: "https://local-turistico-psi.vercel.app/"
+  },
   {
     titulo: "Site PAQ design novo",
     imagem: "../img/capas-projetos/prototipando.png",
@@ -81,7 +129,7 @@ const projetos = [
     site: "https://site-filmes-2-0.vercel.app/"
   },
   {
-    titulo: "Imover transportadora",
+    titulo: "Imoveer transportadora",
     imagem: "../img/capas-projetos/imover.png",
     tecnologias: ["fab fa-html5", "fab fa-css3-alt", "fab fa-js-square"],
     descricao: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa earum quidem tenetur sit. Minima quis.",
@@ -166,6 +214,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const linkRepositorio = document.createElement("a");
       linkRepositorio.href = projeto.repositorio;
       linkRepositorio.textContent = "Repositório";
+      linkRepositorio.target = "_blank";
       linkRepositorio.setAttribute('aria-label', `visitar o repositório do ${projeto.titulo}`)
       bntsProjetoItem.appendChild(linkRepositorio);
 

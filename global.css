@@ -78,7 +78,6 @@ body {
 
 @media (max-width:700px) {
    body {
-    width: 100vw;
     overflow-x: hidden;
     padding: 0 2em;
    }
