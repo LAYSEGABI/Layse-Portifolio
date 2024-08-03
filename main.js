@@ -11,7 +11,7 @@ const projetos = [
     titulo: "Portifólio Layse gabrielly",
     imagem: "assets/img/capas-projetos/portifolio.png",
     tecnologias: ["fab fa-html5", "fab fa-css3-alt",  "fab fa-js-square"],
-    descricao: "Projetado para destacar as habilidades e projetos mais relevantes, dando uma visão geral rápida e impactante do dev.",
+    descricao: "Esse foi meu segundo portifólio, tentei trazer um aspecto geek, ele é totalmente responsivo.",
     repositorio: "https://github.com/LAYSEGABI/Portifolio-Layse-Gabrielly-azul",
     site: "https://portifolio-layse-gabrielly-azul.vercel.app/"
   },
@@ -36,8 +36,8 @@ const projetos = [
     imagem: "assets/img/capas-projetos/lista-animes.png",
     tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
     descricao: "Durante um curso da Alura, desenvolvi um site de livros que me deu a inspiração para esse site. Em vez de livros, resolvi colocar meus animes favoritos.",
-    repositorio: "https://github.com/LAYSEGABI/Site-filmes-2.0",
-    site: "https://site-filmes-2-0.vercel.app/"
+    repositorio: "https://github.com/LAYSEGABI/Site-lista-de-animes",
+    site: "https://site-lista-de-animes.vercel.app/"
   },
   {
     titulo: "Travelgram",

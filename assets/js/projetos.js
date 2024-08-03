@@ -53,12 +53,12 @@ const projetos = [
     imagem: "../img/capas-projetos/alura-books.png",
     tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
     descricao: "Site desenvolvido durante curso de html e css na alura, esse foi o site base para o de lista de animes.",
-    repositorio: "https://github.com/LAYSEGABI/iMoveer",
-    site: "https://imoveer.vercel.app/"
+    repositorio: "https://github.com/LAYSEGABI/Alura-Books-",
+    site: "https://alura-books-puce-eta.vercel.app/"
   },
   {
     titulo: "Fretex Transportadora",
-    imagem: "../img/capas-projetos/alura-books.png",
+    imagem: "../img/capas-projetos/fretex.png",
     tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
     descricao: "Essa foi a primeira vesão do site da imoveer, quando o nome da startup ainda era Fretex",
     repositorio: "https://github.com/LAYSEGABI/Fretex",
@@ -121,18 +121,18 @@ const projetos = [
     site: "https://the-super-mario-bros-movie.vercel.app/"
   },
   {
-    titulo: "Site lista de Filmes",
-    imagem: "../img/capas-projetos/filmes.png",
+    titulo: "Site lista de Animes",
+    imagem: "../img/capas-projetos/lista-animes.png",
     tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
-    descricao: "descricao lista de filmes",
-    repositorio: "https://github.com/LAYSEGABI/Site-filmes-2.0",
-    site: "https://site-filmes-2-0.vercel.app/"
+    descricao: "Durante um curso da Alura, desenvolvi um site de livros que me deu a inspiração para esse site. Em vez de livros, resolvi colocar meus animes favoritos.",
+    repositorio: "https://github.com/LAYSEGABI/Site-lista-de-animes",
+    site: "https://site-lista-de-animes.vercel.app/"
   },
   {
     titulo: "Imoveer transportadora",
     imagem: "../img/capas-projetos/imover.png",
     tecnologias: ["fab fa-html5", "fab fa-css3-alt", "fab fa-js-square"],
-    descricao: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa earum quidem tenetur sit. Minima quis.",
+    descricao: "Landing page de uma empresa de transporte, a ideia de empresa foi desenvolvida em uma startup que eu fiz parte.",
     repositorio: "https://github.com/LAYSEGABI/iMoveer",
     site: "https://imoveer.vercel.app/"
   },
@@ -140,7 +140,7 @@ const projetos = [
     titulo: "Portifólio Layse gabrielly",
     imagem: "../img/capas-projetos/portifolio.png",
     tecnologias: ["fab fa-html5", "fab fa-css3-alt"],
-    descricao: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa earum quidem tenetur sit. Minima quis.",
+    descricao: "Projetado para destacar as habilidades e projetos mais relevantes, dando uma visão geral rápida e impactante do dev.",
     repositorio: "https://github.com/LAYSEGABI/Portifolio-Layse-Gabrielly-azul",
     site: "https://portifolio-layse-gabrielly-azul.vercel.app/"
   }
