@@ -52,54 +52,6 @@
 }
 
 
-@media (max-width:900px) {
-    .obj1 {
-        top: -10%;
-        left: auto;
-        right: -40%;
-    }
-}
-
-@media (max-width:500px) {
-
-    .gradient {
-        opacity: .5;
-    }
-    .obj1 {
-        --size: 200px;
-        top: 380%;
-        left: 10%;
-    }
-
-    .obj2 {
-        --size: 300px;
-
-        top: 90%;
-        left: -30%;
-    }
- .obj4 {
-        --size: 200px;
-
-        left: -5%;
-        top: 160%;
-    }
-    .obj3 {
-        --size:200px;
-        top: -20%;
-        left: 10%;
-    }
-
-  .obj5 {
-        --size: 200px;
-        top: 260%;
-        left: 0;
-    }
-
-   
-
-  
-
-}
 
 
 @keyframes rotate {

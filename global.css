@@ -26,7 +26,7 @@ html {
 
 body {
     overflow-x: hidden;
-    width: 100%;
+    width: 100vw;
     
     font-family: "Roboto Mono", monospace;
     background-color: var(--lg-background-color);
@@ -40,7 +40,6 @@ body {
     & > .container-geral {
         max-width: 1280px;
         margin: 0 auto;
-        padding: 0 1rem;
     }
 
     /* Scrollbar personalizada */

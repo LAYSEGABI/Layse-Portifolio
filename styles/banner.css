@@ -13,13 +13,16 @@
         max-width: 1280px;
         margin: 0 auto;
         display: flex;
-        
+
         width: 100%;
         justify-content: space-between;
+        align-items: center;
+        justify-content: center;
 
         &>.container-banner-desc {
             display: flex;
             flex-direction: column;
+            width: 60%;
 
 
             .banner-descricao {
@@ -120,34 +123,40 @@
 
         }
 
-        &>.img {
-            width: fit-content;
+       &>.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: auto; /* deixa a altura ser proporcional */
 
+    &>.banner-image {
+        position: relative;
+        width: 100%;
+        max-width: 500px; /* limite para não crescer demais */
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-            &>.banner-image {
-                position: relative;
-                width: 400px;
-                height: auto;
-                align-self: center;
-            }
+    .banner-image img {
+        position: relative; /* <- não usa mais absolute */
+        width: 100%;
+        height: auto;
+    }
 
-            .banner-image img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: auto;
-            }
+    .banner-image .bg {
+        animation: floatImg 4s ease-in-out infinite;
+        z-index: 0;
+    }
 
-            .banner-image .bg {
-                animation: floatImg 4s ease-in-out infinite;
-                z-index: 0;
-            }
+    .banner-image .front {
+        z-index: 1;
+        margin-left: -100%; /* sobreposição */
+    }
+}
 
-            .banner-image .front {
-                z-index: 1;
-            }
-        }
     }
 
     .seta {
@@ -187,29 +196,59 @@
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     .banner {
-        .banner-descricao {
-            width: 100%;
+        &>.container-banner {
+            gap: 1rem;
 
-            h1 {
-                font-size: 2em;
+            &>.container-banner-desc {
+
+
+                .banner-descricao {
+                    h1 {
+                        font-size: 1.6rem;
+                    }
+                }
             }
         }
     }
-
 }
+
+@media (max-width: 950px) {
+    .banner {
+        padding: 2rem;
+
+        &>.container-banner {
+            flex-direction: column-reverse;
+            align-items: center;
+
+            &>.container-banner-desc {
+                width: 100%;
+                align-items: center;
+
+                .banner-descricao {
+                    text-align: center;
+        
+
+                    h1 {
+                        align-self: center;
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+
+            &>img {
+                .banner-image {
+                    max-width: 250px;
+                }
+            }
+        }
+    }
+}
+
 
 @media (max-width: 500px) {
 
-    .banner {
-        .banner-descricao {
-
-            h1 {
-                font-size: 1.5em;
-            }
-        }
-    }
 
     .habilidades {
         ul {
