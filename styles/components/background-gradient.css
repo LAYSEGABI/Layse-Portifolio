@@ -13,28 +13,22 @@
 
 .obj1 {
     --size: 300px;
-    top: -10%;
+    top: -25%;
     right: -40px;
-    background-image: linear-gradient(hsla(221, 90%, 50%, 0.699), hsla(300, 100%, 50%, 0.705));
+    background-image: linear-gradient(hsl(221, 82%, 22%), hsl(184, 100%, 50%));
     filter: blur(calc(var(--size) / 3));
 
 }
 
-.obj2 {
-    --size: 300px;
-    top: 70%;
-    left: 100px;
-    filter: blur(calc(var(--size) / 5));
-    background-image: linear-gradient(hsla(298, 77%, 46%, 0.384), hsla(212, 81%, 50%, 0.267));
 
-}
 
 .obj3 {
     --size: 300px;
-    top: -150px;
-    filter: blur(calc(var(--size) / 4));
-    left: -40px;
-    background-image: linear-gradient(hsla(298, 77%, 46%, 0.5), hsla(212, 81%, 50%, 0.432));
+    top: 80%;
+    filter: blur(calc(var(--size) / 3));
+    left: -80px;
+    background-image: linear-gradient(hsla(192, 82%, 46%, 0.014), hsl(184, 100%, 50%));
+    filter: blur(calc(var(--size) / 3));
 
 }
 
@@ -43,7 +37,8 @@
     top: 110%;
     right: -40px;
     filter: blur(calc(var(--size) / 4));
-    background-image: linear-gradient(hsla(298, 77%, 46%, 0.5), hsla(212, 81%, 50%, 0.432));
+    background-image: linear-gradient(hsla(221, 82%, 22%, 0), hsl(184, 100%, 50%));
+    filter: blur(calc(var(--size) / 3));
 
 }
 
@@ -51,8 +46,8 @@
     --size: 300px;
     top: 180%;
     left: -10%;
-    filter: blur(calc(var(--size) / 4));
-    background-image: linear-gradient(hsla(298, 77%, 46%, 0.5), hsla(212, 81%, 50%, 0.432));
+    background-image:linear-gradient(hsla(221, 82%, 22%, 0), hsl(189, 73%, 37%));
+    filter: blur(calc(var(--size) / 5));
 
 }
 

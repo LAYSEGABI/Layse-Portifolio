@@ -1,8 +1,12 @@
 header {
-    padding: 1.5em 0;
+    display: flex;
+    padding: 1.5em 4rem;
     justify-content: space-between;
     align-items: center;
     font-size: .9em;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
 
 
     img {
@@ -15,10 +19,13 @@ header {
     }
 
     nav {
+        display: flex;
         position: relative;
         align-items: center;
-        width: 40%;
-        margin-left: -30%;
+        width: fit-content;
+        gap: 2rem;
+        margin-right: -6rem;
+
         justify-content: space-between;
         transition: 0.5s;
 
@@ -68,7 +75,7 @@ header {
         box-shadow: 0 0 20px #00000086;
         text-align: center;
         background-size: 200% auto;
-        background-image: linear-gradient(to right, #af098be5 0%, #5dddee 51%, #5a1eb9 100%);
+        background-image: linear-gradient(to right, #097aafe5 0%, #0734c7 51%, #1e3ab9 100%);
 
         &:hover {
             background-position: right center;
@@ -80,41 +87,14 @@ header {
 
 }
 
-@media (max-width:500px) {
+@media (max-width:700px) {
     header {
-        flex-direction: column;
+        padding: 1rem;
 
         nav {
-            width: 50%;
-            padding: .5em 0;
-            margin-left: 0;
-
-            a {
-                &:first-child {
-                    display: none;
-                }
-            }
+            display: none;
         }
 
-        .contate-me {
-            margin-top: 5px;
-        }
-
-
-    }
-}
-
-
-@media (max-width:380px) {
-    header {
-       
-        nav {
-            width: 65%;
-        
-
-        }
-
-    
 
     }
 }

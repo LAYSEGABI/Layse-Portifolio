@@ -15,8 +15,8 @@
 }
 
 :root {
-    --lg-cor-destaque: rgb(144, 25, 160);
-    --lg-background-color: #040414;
+    --lg-cor-destaque: rgb(25, 106, 160);
+    --lg-background-color: #0c0c16;
     --lg-text-color: rgb(255, 255, 255);
 }
 
@@ -27,11 +27,21 @@ html {
 body {
     overflow-x: hidden;
     width: 100%;
-    padding: 0 10%;
-    max-width: 1320px;
+    
     font-family: "Roboto Mono", monospace;
     background-color: var(--lg-background-color);
     color: var(--lg-text-color);
+
+     /* background noise */
+    background-image: url("./assets/img/noise.svg");
+    background-repeat: repeat;   /* repete a textura */
+    background-size: auto;       /* mantém tamanho original */
+
+    & > .container-geral {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
 
     /* Scrollbar personalizada */
     &::-webkit-scrollbar {
